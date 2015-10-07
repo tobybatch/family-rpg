@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Slider - Multiple sliders</title>
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+  <script src="js/main.js"></script>
+
+  <style>
+    #eq > span {
+      height:120px; float:left; margin:15px
+    }
+    body {
+      font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
+    }
+    .label {
+        width: 90px;
+        display: block;
+        float: left;
+    }
+    .slider {
+        width: 425px;
+        display: block;
+        float: left;
+    }
+    .attval {
+        border: 1px solid black;
+        width: 100px;
+        height: 20px;
+        display: block;
+        float: left;
+        margin-left: 50px;
+    }
+    #eq > div {
+        clear: both;
+        margin-bottom: 20px;
+        height: 20px;
+    }
+    #attheader > .header {
+        background: #ccc;
+        width: 100px;
+        display: inline-block;
+        text-align: center;
+    }
+    #attheader > .header.first {
+        margin-left: 50px;
+    }
+  </style>
+
+
+</head>
+<body>
+ 
+<p class="ui-state-default ui-corner-all" style="padding:4px;margin-top:4em;">
+  <span class="ui-icon ui-icon-signal" style="float:left; margin:-2px 5px 0 0;"></span>
+  Attributes
+</p>
+ 
+<div id="eq">
+    <div id='attheader'>
+        <span class='header first'>Weakest</span>
+        <span class='header'>Poor</span>
+        <span class='header'>Average</span>
+        <span class='header'>Good</span>
+        <span class='header'>Superhuman</span>
+    </div>
+    <div id='str'>
+        <span class='label'>Strength:</span>
+        <span class='slider' data-name='str'>30</span>
+        <span class='attval'></span>
+    </div>
+    <div id='int'>
+        <span class='label'>Smarts:</span>
+        <span class='slider' data-name='smt'>30</span>
+        <span class='attval'></span>
+    </div>
+    <div id='luk'>
+        <span class='label'>Luck:</span>
+        <span class='slider' data-name='lck'>30</span>
+        <span class='attval'></span>
+    </div>
+    <div id='hlt'>
+        <span class='label'>Health:</span>
+        <span class='slider' data-name='hlt'>30</span>
+        <span class='attval'></span>
+    </div>
+    <div id='qik'>
+        <span class='label'>Quickness:</span>
+        <span class='slider' data-name='qik'>30</span>
+        <span class='attval'></span>
+    </div>
+    <div id='lik'>
+        <span class='label'>Likeability:</span>
+        <span class='slider' data-name='lik'>30</span>
+        <span class='attval'></span>
+    </div>
+</div>
+ 
+ 
+</body>
+</html>
